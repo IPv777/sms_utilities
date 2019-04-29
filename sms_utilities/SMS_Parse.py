@@ -26,10 +26,10 @@ def parse(rp_message):
 		("vbts_rp_message_type", rpdu.rp_mti)
 	]
 	exports = [(x, clean(y)) for (x, y) in exports]
-	return exports
+	return(exports)
 
 if __name__ == '__main__':
 	h = "001000038100000e05df04810011000005cbb7fb0c02"
 	if len(sys.argv) > 1:
 		h = sys.argv[1]
-print parse(h)
+	print(parse(h))
